@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://use.fontawesome.com/4bd930b540.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Screen1</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+                <a class="navbar-brand" href="#"><img src="logo-white.png"></a>
+            </div>
+            <div class="pull-right hidden-xs">
+                <span><i class="fa fa-user-circle fa-4x"></i></span>
+                <h5>Super Admin</h5>
+                <h5>Mr. Nitin JayaKrishnan</h5>
+            </div>
+        </div>
+    </nav>
+    <div class="left">
+        <div class="container-fluid" id="services">
+            <div class="row">
+                <div class="col-md-12 text-center" style="margin-top:-20px;">
+                    <ul class="service-container">
+                        <li>
+                            <div class="service">
+                                <i class="fa fa-institution fa-2x"></i>
+                                <h2 style="font-size:20px;">LogOrgs</h2>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="service">
+                                <i class="fa fa-building fa-2x"></i>
+                                <h2 style="font-size:20px;">Vendors</h2>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="service">
+                                <i class="fa fa-truck fa-2x"></i>
+                                <h2 style="font-size:20px;">Consignees</h2>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="service">
+                                <i class="fa fa-file-text fa-2x"></i>
+                                <h2 style="font-size:20px;">Rate Matrics</h2>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="service">
+                                <i class="fa fa-folder-o fa-2x"></i>
+                                <h2 style="font-size:20px;">Master Material</h2>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service">
+                                <i class="fa fa-download fa-2x"></i>
+                                <h2 style="font-size:20px;">Bulk Orders</h2>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="service">
+                                <i class="fa fa-bookmark fa-2x"></i>
+                                <h2 style="font-size:20px;">BU and CC</h2>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="service">
+                                <i class="fa fa-folder-open-o fa-2x"></i>
+                                <h2 style="font-size:20px;">Data Requests</h2>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="main">
+        <div class="search">
+            <form>
+                <img src="searchicon.png">
+                <input type="text" name="search" placeholder="Search here">
+                <select class="form-control pull-right hidden-xs" id="select">
+                    <option>Select City</option>
+                    <option>Delhi</option>
+                    <option>Bangalore</option>
+                    <option>Haryana</option>
+                    <option>Pune</option>
+                    <option>Mumbai</option>
+                </select>
+                <button class="btn btn-success pull-right">Add New Consignee</button>
+            </form>
+        </div>
+        <div class="container-fluid" style="width:100%;">
+            <div class="container" style="margin-top:20px;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Kishan Infrastructure</th>
+                                        <th>Delivery Type : Comaker Site</th>
+                                        <th></th>
+                                        <th></th>
+                                        <th style="display:flex;">Phone No. : <input type="" placeholder="" value="8285698087" class="input" id="input" onkeyup="saveValue(this);"></th>
+                                        <th></th>
+                                        <th>SAP ID : SAP1234 </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <h4>Street</h4>
+                                            <p>Village Sanpka, Near JamalPur Chowk, VPO<br> Janola Tehsil Farukhnagar, Main Gurgaon<br> Pataudi Road</p>
+                                        </td>
+                                        <td>
+                                            <h4>City</h4>
+                                            <p>Gurgaon</p>
+                                        </td>
+                                        <td style="position:relative;left:-100px;">
+                                            <h4>State</h4>
+                                            <p>Haryana</p>
+                                        </td>
+                                        <td style="position:relative;left:-80px;">
+                                            <h4>Pincode</h4>
+                                            <p>122503</p>
+                                        </td>
+                                        <td>
+                                            <h4>Country</h4>
+                                            <p>India</p>
+                                        </td>
+                                        <td style="position:relative;left:-70px;">
+                                            <h4>Region</h4>
+                                            <p>North India</p>
+                                        </td>
+                                        <td style="position:relative;top:10px;">
+                                            <a href="#">
+                                                <p>Edit</p>
+                                                <p>More Details
+                                                </p>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Kishan Infrastructure</th>
+                                        <th>Delivery Type : Comaker Site</th>
+                                        <th></th>
+                                        <th></th>
+                                        <th style="display:flex;">Phone No. : <input type="" placeholder="" value="8285698087" class="input" id="input2" onkeyup="saveValue(this);"></th>
+                                        <th></th>
+                                        <th>SAP ID : SAP1234 </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <h4>Street</h4>
+                                            <p>Village Sanpka, Near JamalPur Chowk, VPO<br> Janola Tehsil Farukhnagar, Main Gurgaon<br> Pataudi Road</p>
+                                        </td>
+                                        <td>
+                                            <h4>City</h4>
+                                            <p>Gurgaon</p>
+                                        </td>
+                                        <td style="position:relative;left:-100px;">
+                                            <h4>State</h4>
+                                            <p>Haryana</p>
+                                        </td>
+                                        <td style="position:relative;left:-80px;">
+                                            <h4>Pincode</h4>
+                                            <p>122503</p>
+                                        </td>
+                                        <td>
+                                            <h4>Country</h4>
+                                            <p>India</p>
+                                        </td>
+                                        <td style="position:relative;left:-70px;">
+                                            <h4>Region</h4>
+                                            <p>North India</p>
+                                        </td>
+                                        <td style="position:relative;top:10px;">
+                                            <a href="#">
+                                                <p>Edit</p>
+                                                <p>More Details
+                                                </p>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Kishan Infrastructure</th>
+                                        <th>Delivery Type : Comaker Site</th>
+                                        <th></th>
+                                        <th></th>
+                                        <th style="display:flex;">Phone No. : <input type="" placeholder="" value="8285698087" class="input" id="input3" onkeyup="saveValue(this);"></th>
+                                        <th></th>
+                                        <th>SAP ID : SAP1234 </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <h4>Street</h4>
+                                            <p>Village Sanpka, Near JamalPur Chowk, VPO<br> Janola Tehsil Farukhnagar, Main Gurgaon<br> Pataudi Road</p>
+                                        </td>
+                                        <td>
+                                            <h4>City</h4>
+                                            <p>Gurgaon</p>
+                                        </td>
+                                        <td style="position:relative;left:-100px;">
+                                            <h4>State</h4>
+                                            <p>Haryana</p>
+                                        </td>
+                                        <td style="position:relative;left:-80px;">
+                                            <h4>Pincode</h4>
+                                            <p>122503</p>
+                                        </td>
+                                        <td>
+                                            <h4>Country</h4>
+                                            <p>India</p>
+                                        </td>
+                                        <td style="position:relative;left:-70px;">
+                                            <h4>Region</h4>
+                                            <p>North India</p>
+                                        </td>
+                                        <td style="position:relative;top:10px;">
+                                            <a href="#">
+                                                <p>Edit</p>
+                                                <p>More Details
+                                                </p>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Kishan Infrastructure</th>
+                                        <th>Delivery Type : Comaker Site</th>
+                                        <th></th>
+                                        <th></th>
+                                        <th style="display:flex;">Phone No. : <input type="" placeholder="" value="8285698087" class="input" id="input4" onkeyup="saveValue(this);"></th>
+                                        <th></th>
+                                        <th>SAP ID : SAP1234 </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <h4>Street</h4>
+                                            <p>Village Sanpka, Near JamalPur Chowk, VPO<br> Janola Tehsil Farukhnagar, Main Gurgaon<br> Pataudi Road</p>
+                                        </td>
+                                        <td>
+                                            <h4>City</h4>
+                                            <p>Gurgaon</p>
+                                        </td>
+                                        <td style="position:relative;left:-100px;">
+                                            <h4>State</h4>
+                                            <p>Haryana</p>
+                                        </td>
+                                        <td style="position:relative;left:-80px;">
+                                            <h4>Pincode</h4>
+                                            <p>122503</p>
+                                        </td>
+                                        <td>
+                                            <h4>Country</h4>
+                                            <p>India</p>
+                                        </td>
+                                        <td style="position:relative;left:-70px;">
+                                            <h4>Region</h4>
+                                            <p>North India</p>
+                                        </td>
+                                        <td style="position:relative;top:10px;">
+                                            <a href="#">
+                                                <p>Edit</p>
+                                                <p>More Details
+                                                </p>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Kishan Infrastructure</th>
+                                        <th>Delivery Type : Comaker Site</th>
+                                        <th></th>
+                                        <th></th>
+                                        <th style="display:flex;">Phone No. : <input type="" placeholder="8285698087" value="8285698087" class="input" id="input5" onkeyup="saveValue(this);"></th>
+                                        <th></th>
+                                        <th>SAP ID : SAP1234 </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <h4>Street</h4>
+                                            <p>Village Sanpka, Near JamalPur Chowk, VPO<br> Janola Tehsil Farukhnagar, Main Gurgaon<br> Pataudi Road</p>
+                                        </td>
+                                        <td>
+                                            <h4>City</h4>
+                                            <p>Gurgaon</p>
+                                        </td>
+                                        <td style="position:relative;left:-100px;">
+                                            <h4>State</h4>
+                                            <p>Haryana</p>
+                                        </td>
+                                        <td style="position:relative;left:-80px;">
+                                            <h4>Pincode</h4>
+                                            <p>122503</p>
+                                        </td>
+                                        <td>
+                                            <h4>Country</h4>
+                                            <p>India</p>
+                                        </td>
+                                        <td style="position:relative;left:-70px;">
+                                            <h4>Region</h4>
+                                            <p>North India</p>
+                                        </td>
+                                        <td style="position:relative;top:10px;">
+                                            <a href="#">
+                                                <p>Edit</p>
+                                                <p>More Details
+                                                </p>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</body>
+
+</html>
